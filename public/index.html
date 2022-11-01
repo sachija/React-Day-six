@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <h1>React interview Preparation Day-six</h1> <HR></HR>
+    <p> <h2> Que 1-What is Memory leak how to overcome it</h2>
+      Ans -: A memory leak is a commonly faced issue when developing React applications. It causes many problems, including:
+    <br> affecting the project's performance by reducing the amount of available memory; <br>
+      slowing down the application; <br>
+      crashing the system. <br>
+      So, you need to eliminate memory leaks issues.
+      You may encounter the following warning message in React application when working with asynchronous calls:
+      Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup  <br>
+    Ways to elimintate the memory leak <br>
+  1.In class component we are having lifr cycle ComponentWillUnmount </p>
+  2.In Functional component we are having clean up useEffect </p>
+<hr>
+
+      <h2> Que-2 What are the events in react ?</h2>
+      <p>React events are named using camelCase, rather than lowercase.
+        With JSX you pass a function as the event handler, rather than a string. <br>
+        To pass an argument to an event handler, use an arrow function. <br>
+        cannot return false to prevent default behavior in React. You must call preventDefault explicitly. <br>
+      ex-1.onClick <br>2.onChange <br> 3.onSubmit <br> </p> <hr>
+  
+  
+  <h2> Que-3 What is Redux thunk?</h2>
+  <p>What is Redux Thunk?
+    Thunk is a logical concept in programming where you deal with a function that is primarily used to delay the calculation or evaluation of any operation.
+     Redux Thunk acts as a middleware that will return you a function instead of an object while calling through the action creators. The returned function receives the dispatch method from the store and then later it is used to dispatch synchronously inside the body of function once the asynchronous actions have been completed</p>
+     <hr>
+     <h2> Que-4 which Do you prefer function-based or class component and why?</h2>
+     <p>firstly both of having their Props And cons but the Functional component is getting popular day by day following are the reasons  <br>
+    a.Functional Component are easy to unedrstand and simple <br>
+    b.Functional Component are having react Hooks which are easy to implememt for the ppl who are not having the ES6 background. <br>
+    c.while handling the props confusion with the key this will not be there. <br>
+    d.no need to use constuctor method <br>
+    e.Creation of the Functional Component is esay it is just like plain javascript <br>
+    f.No render method <br>
+    g.in class component state is initialized with constructor in Functional component we are having Hook called UseState <br>
+    <hr>
+    <h2>Que 5-What do you mean by Npm</h2>
+    <p>The name npm (Node Package Manager) stems from when npm first was created as a package manager for Node.js. <br>
+    All npm packages are defined in files called package.json. <br>
+      
+      The content of package.json must be written in JSON. <br>
+      
+      At least two fields must be present in the definition file: name and version.<br>
+      <hr>
+      <h2>Que -6 Explain Reducer as a pue function</h2>
+      <p>Redux takes a given state (object) and passes it to each reducer in a loop. And it expects a brand new object from the reducer if there are any changes. And it also expects to get the old object back if there are no changes.
+
+        Redux simply checks whether the old object is the same as the new object by comparing the memory locations of the two objects. So if you mutate the old object’s property inside a reducer, the “new state” and the “old state” will both point to the same object.</p>
+    </p>
+
+    
+    
+    
+    </body>
+
+</html>
